@@ -18,7 +18,7 @@ def load_data(path="../data/", dataset="rasa"):
 
     idx_features_labels = np.genfromtxt("{}{}.content".format(path, dataset),
                                         dtype=np.dtype(str))
-    features = sp.csr_matrix(idx_features_labels[:, 1:-1], dtype=np.float32)
+    features = sp.csr_matrix(idx_features_labels[:, 1:-2], dtype=np.float32)
     labels = encode_onehot(idx_features_labels[:, -1])
 
     # build graph
