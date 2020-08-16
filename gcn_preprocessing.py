@@ -195,10 +195,9 @@ class Processor:
             
         #print(len(x_train))
         
-        #x_train = np.array(x_train)
         x_train = x_train[1:]
         
-        index = np.arange(x_train.shape[0] + 1)
+        index = np.arange(x_train.shape[0])
         x_train = np.c_[index,x_train]
         print(x_train.shape)
          

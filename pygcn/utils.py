@@ -38,9 +38,9 @@ def load_data(path="../data/", dataset="rasa"):
     features = normalize(features)
     adj = normalize(adj + sp.eye(adj.shape[0]))
 
-    idx_train = range(240000)
-    idx_val = range(240000, 241500)
-    idx_test = range(241500, 242992)
+    idx_train = range(40000)
+    idx_val = range(40000, 50000)
+    idx_test = range(50000, 58000)
 
     features = torch.FloatTensor(np.array(features.todense()))
     labels = torch.LongTensor(np.where(labels)[1])
