@@ -1,8 +1,8 @@
 import numpy as np
 
-content = np.loadtxt('/home/liuz/8_pytorch_gcn/data/rasa.content')
-with open('/home/liuz/8_pytorch_gcn/data/join.fasta') as fasta:
-    with open('/home/liuz/8_pytorch_gcn/data/rasa.cites', 'w') as w:
+content = np.loadtxt('/data/rasa.content')
+with open('/data/join.fasta') as fasta:
+    with open('/data/rasa.cites', 'w') as w:
         line = fasta.readline()
         num = 0
         while line:
